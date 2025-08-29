@@ -54,6 +54,18 @@
     order: 10;
   }
   
+  .card-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-icon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
 }
 
 @media only screen and (min-width: 601px) and (max-width: 959px) {
@@ -68,6 +80,11 @@
 
   .history{
     order: 10;
+  }
+  .card-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
 }

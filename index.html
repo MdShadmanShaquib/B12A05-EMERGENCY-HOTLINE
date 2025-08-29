@@ -20,9 +20,9 @@
 <body class="bg-white">
     <header class="max-w-[1920px] mx-auto px-16">
         <div class="navbar nav">
-            <div class="navbar-start flex gap-3 ">
+            <div class="navbar-start flex gap-3 nav-icon">
                 <div>
-                    <a><img style="width: 50px; height: 50px;" src="assets/logo.png" alt=""></a>
+                    <a><img class="icon-img" style="width: 50px; height: 50px;" src="assets/logo.png" alt=""></a>
                 </div>
                 <div>
                     <a class="text-xl text-left hind-madurai-bold">Emergency <br> Service</a>
@@ -74,7 +74,7 @@
                             <p id="national-service-no" class="text-2xl hind-madurai-bold">999</p>
                             <p class="text-[16px] bg-gray-300 rounded-3xl px-4 py-1 w-24">সার্বজনীন</p>
                         </div>
-                        <div>
+                        <div class="card-buttons">
                             <a id="copy-text" class="btn rounded-lg w-44 h-12"><svg width="17" height="16"
                                     viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -116,7 +116,7 @@
                             <p id="national-service-no2" class="text-2xl hind-madurai-bold">999</p>
                             <p class="text-[16px] bg-gray-300 rounded-3xl px-4 py-1 w-20">পুলিশ</p>
                         </div>
-                        <div>
+                        <div class="card-buttons">
                             <a id="copy-text2" class="btn rounded-lg w-44 h-12"><svg width="17" height="16"
                                     viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -159,7 +159,7 @@
                             <p id="national-service-no3" class="text-2xl hind-madurai-bold">999</p>
                             <p class="text-[16px] bg-gray-300 rounded-3xl px-4 py-1 w-20">ফায়ার</p>
                         </div>
-                        <div>
+                        <div class="card-buttons">
                             <a id="copy-text3" class="btn rounded-lg w-44 h-12"><svg width="17" height="16"
                                     viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -224,7 +224,7 @@
                             <p id="national-service-no4" class="text-2xl hind-madurai-bold">1994-999999</p>
                             <p class="text-[16px] bg-gray-300 rounded-3xl px-4 py-1 w-18">স্বাস্থ্য</p>
                         </div>
-                        <div>
+                        <div class="card-buttons">
                             <a id="copy-text4" class="btn rounded-lg w-44 h-12"><svg width="17" height="16"
                                     viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -267,7 +267,7 @@
                             <p id="national-service-no5" class="text-2xl hind-madurai-bold">109</p>
                             <p class="text-[16px] bg-gray-300 rounded-3xl px-4 py-1 w-24">সহায়তা</p>
                         </div>
-                        <div>
+                        <div class="card-buttons">
                             <a id="copy-text5" class="btn rounded-lg w-44 h-12"><svg width="17" height="16"
                                     viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -310,7 +310,7 @@
                             <p id="national-service-no6" class="text-2xl hind-madurai-bold">106</p>
                             <p class="text-[16px] bg-gray-300 rounded-3xl px-4 py-1 w-24">সরকারি</p>
                         </div>
-                        <div>
+                        <div class="card-buttons">
                             <a id="copy-text6" class="btn rounded-lg w-44 h-12"><svg width="17" height="16"
                                     viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -353,7 +353,7 @@
                             <p id="national-service-no7" class="text-2xl hind-madurai-bold">16216</p>
                             <p class="text-[16px] bg-gray-300 rounded-3xl px-4 py-1 w-20">বিদ্যুৎ</p>
                         </div>
-                        <div>
+                        <div class="card-buttons">
                             <a id="copy-text7" class="btn rounded-lg w-44 h-12"><svg width="17" height="16"
                                     viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -396,7 +396,7 @@
                             <p id="national-service-no8" class="text-2xl hind-madurai-bold">16445</p>
                             <p class="text-[16px] bg-gray-300 rounded-3xl px-4 py-1 w-24">এনজিও</p>
                         </div>
-                        <div>
+                        <div class="card-buttons">
                             <a id="copy-text8" class="btn rounded-lg w-44 h-12"><svg width="17" height="16"
                                     viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -439,7 +439,7 @@
                             <p id="national-service-no9" class="text-2xl hind-madurai-bold">163</p>
                             <p class="text-[16px] bg-gray-300 rounded-3xl px-4 py-1 w-24">পরিবহন</p>
                         </div>
-                        <div>
+                        <div class="card-buttons">
                             <a id="copy-text9" class="btn rounded-lg w-44 h-12"><svg width="17" height="16"
                                     viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -560,7 +560,7 @@
 
         let coinCount = 100;
         callButton.addEventListener("click", function () {
-            if (coinCount <= 0) {
+            if (coinCount < 20) {
                 alert("আপনার পর্যাপ্ত কইন নেই, কল করতে মিনিমাম ২০ টা কইন লাগবে");
             }
             else {
@@ -600,7 +600,7 @@
             });
         });
         callButton2.addEventListener("click", function () {
-            if (coinCount <= 0) {
+            if (coinCount < 20) {
                 alert("আপনার পর্যাপ্ত কইন নেই, কল করতে মিনিমাম ২০ টা কইন লাগবে");
             }
             else {
@@ -640,7 +640,7 @@
             });
         });
         callButton3.addEventListener("click", function () {
-            if (coinCount <= 0) {
+            if (coinCount < 20) {
                 alert("আপনার পর্যাপ্ত কইন নেই, কল করতে মিনিমাম ২০ টা কইন লাগবে");
             }
             else {
@@ -680,7 +680,7 @@
             });
         });
         callButton4.addEventListener("click", function () {
-            if (coinCount <= 0) {
+            if (coinCount < 20) {
                 alert("আপনার পর্যাপ্ত কইন নেই, কল করতে মিনিমাম ২০ টা কইন লাগবে");
             }
             else {
@@ -720,7 +720,7 @@
             });
         });
         callButton5.addEventListener("click", function () {
-            if (coinCount <= 0) {
+            if (coinCount < 20) {
                 alert("আপনার পর্যাপ্ত কইন নেই, কল করতে মিনিমাম ২০ টা কইন লাগবে");
             }
             else {
@@ -760,7 +760,7 @@
             });
         });
         callButton6.addEventListener("click", function () {
-            if (coinCount <= 0) {
+            if (coinCount < 20) {
                 alert("আপনার পর্যাপ্ত কইন নেই, কল করতে মিনিমাম ২০ টা কইন লাগবে");
             }
             else {
@@ -800,7 +800,7 @@
             });
         });
         callButton7.addEventListener("click", function () {
-            if (coinCount <= 0) {
+            if (coinCount < 20) {
                 alert("আপনার পর্যাপ্ত কইন নেই, কল করতে মিনিমাম ২০ টা কইন লাগবে");
             }
             else {
@@ -840,7 +840,7 @@
             });
         });
         callButton8.addEventListener("click", function () {
-            if (coinCount <= 0) {
+            if (coinCount < 20) {
                 alert("আপনার পর্যাপ্ত কইন নেই, কল করতে মিনিমাম ২০ টা কইন লাগবে");
             }
             else {
@@ -880,7 +880,7 @@
             });
         });
         callButton9.addEventListener("click", function () {
-            if (coinCount <= 0) {
+            if (coinCount < 20) {
                 alert("আপনার পর্যাপ্ত কইন নেই, কল করতে মিনিমাম ২০ টা কইন লাগবে");
             }
             else {
