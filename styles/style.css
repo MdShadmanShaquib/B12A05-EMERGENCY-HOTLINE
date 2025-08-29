@@ -42,5 +42,13 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
   }
+  .nav{
+    display: flex;
+    flex-direction: column;
+  }
+  .navlist{
+    flex-direction: column;
+  }
+  
   
 }
