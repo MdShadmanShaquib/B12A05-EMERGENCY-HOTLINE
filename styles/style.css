@@ -49,6 +49,9 @@
   .navlist{
     flex-direction: column;
   }
-  
+
+  .history{
+    order: 10;
+  }
   
 }
